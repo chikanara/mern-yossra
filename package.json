@@ -3,19 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "nodemon server"
+    "start": "concurrently \"cd client && npm start\" \"cd backend && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikanara/mern-yossra.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.12.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.5",
-    "nodemon": "^2.0.12"
-  }
+  "bugs": {
+    "url": "https://github.com/chikanara/mern-yossra/issues"
+  },
+  "homepage": "https://github.com/chikanara/mern-yossra#readme"
 }
